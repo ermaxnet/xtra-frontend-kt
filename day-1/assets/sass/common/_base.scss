@@ -1,0 +1,30 @@
+html, body {
+    overflow-x: hidden;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    color: $text-color;
+    @include roboto(20px, 1.4);
+    text-rendering: optimizeLegibility;
+}
+
+.content {
+    position: relative;
+}
+
+.h-line {
+    background-color: rgba($h-line-color, .24);
+    display: inline-block;
+    height: $h-line-height;
+    position: relative;
+    width: $h-line-width;
+}
+
+.text-3 {
+    color: $text-color;
+    @include roboto(20px, 1.4);
+}

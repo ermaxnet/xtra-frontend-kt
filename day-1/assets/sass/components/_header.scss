@@ -1,0 +1,38 @@
+.header {
+    background-color: rgba($white, .9);
+    @include box-shadow($header-box-shadow);
+    height: auto;
+    position: fixed;
+    width: 100%;
+
+    &-wrapper {
+        @include align-items(center);
+        @include display-flex();
+        @include justify-content(space-between);
+        height: $header-min-height;
+        margin: 0 auto;
+        max-width: $max-width;
+        padding: 0 $padding-size-x;
+    }
+
+    &__block {
+        &--base {
+            @include align-items(center);
+            @include display-flex();
+            @include flex(1 1 auto);
+
+            .logo {
+                height: 22px;
+                width: 112px;
+            }
+
+            .h-line {
+                margin: 0 10px;
+            }
+
+            .text-3 {
+                margin-top: 7px;
+            }
+        }
+    }
+}

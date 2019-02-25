@@ -1,0 +1,211 @@
+/* line 5, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/common/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 9, ../sass/common/_reset.scss */
+*,
+*:after,
+*:before {
+  outline: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot?1551119744');
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot?&1551119744#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff?1551119744') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.svg?1551119744') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/OpenSans/OpenSans-Italic.eot?1551119773');
+  src: url('../fonts/OpenSans/OpenSans-Italic.eot?&1551119773#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Italic.woff?1551119773') format('woff'), url('../fonts/OpenSans/OpenSans-Italic.svg?1551119773') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Light.eot?1551119552');
+  src: url('../fonts/Roboto/Roboto-Light.eot?&1551119552#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Light.woff?1551119551') format('woff'), url('../fonts/Roboto/Roboto-Light.svg?1551119551') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Regular.eot?1551119586');
+  src: url('../fonts/Roboto/Roboto-Regular.eot?&1551119586#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Regular.woff?1551119586') format('woff'), url('../fonts/Roboto/Roboto-Regular.svg?1551119586') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Medium.eot?1551119622');
+  src: url('../fonts/Roboto/Roboto-Medium.eot?&1551119622#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Medium.woff?1551119622') format('woff'), url('../fonts/Roboto/Roboto-Medium.svg?1551119622') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Bold.eot?1551119674');
+  src: url('../fonts/Roboto/Roboto-Bold.eot?&1551119674#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Bold.woff?1551119674') format('woff'), url('../fonts/Roboto/Roboto-Bold.svg?1551119674') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url('../fonts/Roboto/Roboto-Black.eot?1551119701');
+  src: url('../fonts/Roboto/Roboto-Black.eot?&1551119701#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Black.woff?1551119701') format('woff'), url('../fonts/Roboto/Roboto-Black.svg?1551119701') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+/* line 1, ../sass/common/_base.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 5, ../sass/common/_base.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 9, ../sass/common/_base.scss */
+body {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 20px/1.4 "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 15, ../sass/common/_base.scss */
+.content {
+  position: relative;
+}
+
+/* line 19, ../sass/common/_base.scss */
+.h-line {
+  background-color: rgba(213, 213, 213, 0.24);
+  display: inline-block;
+  height: 29px;
+  position: relative;
+  width: 2px;
+}
+
+/* line 27, ../sass/common/_base.scss */
+.text-3 {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 20px/1.4 "Roboto", sans-serif;
+}
+
+/* line 1, ../sass/components/_header.scss */
+.header {
+  background-color: rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  height: auto;
+  position: fixed;
+  width: 100%;
+}
+/* line 8, ../sass/components/_header.scss */
+.header-wrapper {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  height: 65px;
+  margin: 0 auto;
+  max-width: 1224px;
+  padding: 0 65px;
+}
+/* line 19, ../sass/components/_header.scss */
+.header__block--base {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+/* line 24, ../sass/components/_header.scss */
+.header__block--base .logo {
+  height: 22px;
+  width: 112px;
+}
+/* line 29, ../sass/components/_header.scss */
+.header__block--base .h-line {
+  margin: 0 10px;
+}
+/* line 33, ../sass/components/_header.scss */
+.header__block--base .text-3 {
+  margin-top: 7px;
+}

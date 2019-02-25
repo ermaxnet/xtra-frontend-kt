@@ -1,0 +1,14 @@
+@import "compass/reset/utilities";
+
+@include global-reset;
+
+ul {
+    @include reset-list-style;
+}
+
+*,
+*:after,
+*:before {
+    @include reset-focus;
+    @include box-sizing(border-box);
+}

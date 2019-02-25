@@ -1,0 +1,78 @@
+@import "compass/css3/font-face";
+
+@include font-face(
+    "Open Sans",
+    font-files(
+        "OpenSans/OpenSans-Regular.woff",
+        "OpenSans/OpenSans-Regular.svg"
+    ),
+    "OpenSans/OpenSans-Regular.eot",
+    400,
+    normal
+);
+
+@include font-face(
+    "Open Sans",
+    font-files(
+        "OpenSans/OpenSans-Italic.woff",
+        "OpenSans/OpenSans-Italic.svg"
+    ),
+    "OpenSans/OpenSans-Italic.eot",
+    400,
+    italic
+);
+
+@include font-face(
+    "Roboto",
+    font-files(
+        "Roboto/Roboto-Light.woff",
+        "Roboto/Roboto-Light.svg"
+    ),
+    "Roboto/Roboto-Light.eot",
+    300,
+    normal
+);
+
+@include font-face(
+    "Roboto",
+    font-files(
+        "Roboto/Roboto-Regular.woff",
+        "Roboto/Roboto-Regular.svg"
+    ),
+    "Roboto/Roboto-Regular.eot",
+    400,
+    normal
+);
+
+@include font-face(
+    "Roboto",
+    font-files(
+        "Roboto/Roboto-Medium.woff",
+        "Roboto/Roboto-Medium.svg"
+    ),
+    "Roboto/Roboto-Medium.eot",
+    600,
+    normal
+);
+
+@include font-face(
+    "Roboto",
+    font-files(
+        "Roboto/Roboto-Bold.woff",
+        "Roboto/Roboto-Bold.svg"
+    ),
+    "Roboto/Roboto-Bold.eot",
+    700,
+    normal
+);
+
+@include font-face(
+    "Roboto",
+    font-files(
+        "Roboto/Roboto-Black.woff",
+        "Roboto/Roboto-Black.svg"
+    ),
+    "Roboto/Roboto-Black.eot",
+    900,
+    normal
+);

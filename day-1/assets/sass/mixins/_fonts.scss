@@ -1,0 +1,51 @@
+@mixin font($family, $style, $weight, $size, $line-height) {
+    font: $style $weight #{$size}/#{$line-height} $family, sans-serif;
+}
+
+@mixin font-light($family, $style, $size, $line-height) {
+    @include font($family, $style, 300, $size, $line-height);
+}
+
+@mixin font-regular($family, $style, $size, $line-height) {
+    @include font($family, $style, 400, $size, $line-height);
+}
+
+@mixin font-medium($family, $style, $size, $line-height) {
+    @include font($family, $style, 600, $size, $line-height);
+}
+
+@mixin font-bold($family, $style, $size, $line-height) {
+    @include font($family, $style, 700, $size, $line-height);
+}
+
+@mixin font-black($family, $style, $size, $line-height) {
+    @include font($family, $style, 900, $size, $line-height);
+}
+
+@mixin open-sans($size, $line-height) {
+    @include font-regular("Open Sans", normal, $size, $line-height);
+}
+
+@mixin open-sans-italic($size, $line-height) {
+    @include font-regular("Open Sans", italic, $size, $line-height);
+}
+
+@mixin roboto-light($size, $line-height) {
+    @include font-light("Roboto", normal, $size, $line-height);
+}
+
+@mixin roboto($size, $line-height) {
+    @include font-regular("Roboto", normal, $size, $line-height);
+}
+
+@mixin roboto-medium($size, $line-height) {
+    @include font-medium("Roboto", normal, $size, $line-height);
+}
+
+@mixin roboto-bold($size, $line-height) {
+    @include font-bold("Roboto", normal, $size, $line-height);
+}
+
+@mixin roboto-black($size, $line-height) {
+    @include font-black("Roboto", normal, $size, $line-height);
+}
