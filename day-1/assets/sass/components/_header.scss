@@ -4,6 +4,7 @@
     height: auto;
     position: fixed;
     width: 100%;
+    z-index: 500;
 
     &-wrapper {
         @include align-items(center);

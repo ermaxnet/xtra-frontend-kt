@@ -1,4 +1,4 @@
-/* line 5, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Program Files/Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -78,52 +78,68 @@ ul {
   box-sizing: border-box;
 }
 
+/* line 16, ../sass/common/_reset.scss */
+h1 {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 46px/1.25em "Roboto", sans-serif;
+  letter-spacing: -1px;
+  margin-bottom: 15px;
+}
+
+/* line 23, ../sass/common/_reset.scss */
+h3 {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 23px/28px "Roboto", sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 30px;
+}
+
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/OpenSans/OpenSans-Regular.eot?1551119744');
-  src: url('../fonts/OpenSans/OpenSans-Regular.eot?&1551119744#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff?1551119744') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.svg?1551119744') format('svg');
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot?1551265547');
+  src: url('../fonts/OpenSans/OpenSans-Regular.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Regular.woff?1551265547') format('woff'), url('../fonts/OpenSans/OpenSans-Regular.svg?1551265547') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url('../fonts/OpenSans/OpenSans-Italic.eot?1551119773');
-  src: url('../fonts/OpenSans/OpenSans-Italic.eot?&1551119773#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Italic.woff?1551119773') format('woff'), url('../fonts/OpenSans/OpenSans-Italic.svg?1551119773') format('svg');
+  src: url('../fonts/OpenSans/OpenSans-Italic.eot?1551265547');
+  src: url('../fonts/OpenSans/OpenSans-Italic.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/OpenSans/OpenSans-Italic.woff?1551265547') format('woff'), url('../fonts/OpenSans/OpenSans-Italic.svg?1551265547') format('svg');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Light.eot?1551119552');
-  src: url('../fonts/Roboto/Roboto-Light.eot?&1551119552#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Light.woff?1551119551') format('woff'), url('../fonts/Roboto/Roboto-Light.svg?1551119551') format('svg');
+  src: url('../fonts/Roboto/Roboto-Light.eot?1551265547');
+  src: url('../fonts/Roboto/Roboto-Light.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Light.woff?1551265547') format('woff'), url('../fonts/Roboto/Roboto-Light.svg?1551265547') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Regular.eot?1551119586');
-  src: url('../fonts/Roboto/Roboto-Regular.eot?&1551119586#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Regular.woff?1551119586') format('woff'), url('../fonts/Roboto/Roboto-Regular.svg?1551119586') format('svg');
+  src: url('../fonts/Roboto/Roboto-Regular.eot?1551265547');
+  src: url('../fonts/Roboto/Roboto-Regular.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Regular.woff?1551265547') format('woff'), url('../fonts/Roboto/Roboto-Regular.svg?1551265547') format('svg');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Medium.eot?1551119622');
-  src: url('../fonts/Roboto/Roboto-Medium.eot?&1551119622#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Medium.woff?1551119622') format('woff'), url('../fonts/Roboto/Roboto-Medium.svg?1551119622') format('svg');
+  src: url('../fonts/Roboto/Roboto-Medium.eot?1551265547');
+  src: url('../fonts/Roboto/Roboto-Medium.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Medium.woff?1551265547') format('woff'), url('../fonts/Roboto/Roboto-Medium.svg?1551265547') format('svg');
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Bold.eot?1551119674');
-  src: url('../fonts/Roboto/Roboto-Bold.eot?&1551119674#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Bold.woff?1551119674') format('woff'), url('../fonts/Roboto/Roboto-Bold.svg?1551119674') format('svg');
+  src: url('../fonts/Roboto/Roboto-Bold.eot?1551265547');
+  src: url('../fonts/Roboto/Roboto-Bold.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Bold.woff?1551265547') format('woff'), url('../fonts/Roboto/Roboto-Bold.svg?1551265547') format('svg');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url('../fonts/Roboto/Roboto-Black.eot?1551119701');
-  src: url('../fonts/Roboto/Roboto-Black.eot?&1551119701#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Black.woff?1551119701') format('woff'), url('../fonts/Roboto/Roboto-Black.svg?1551119701') format('svg');
+  src: url('../fonts/Roboto/Roboto-Black.eot?1551265547');
+  src: url('../fonts/Roboto/Roboto-Black.eot?&1551265547#iefix') format('embedded-opentype'), url('../fonts/Roboto/Roboto-Black.woff?1551265547') format('woff'), url('../fonts/Roboto/Roboto-Black.svg?1551265547') format('svg');
   font-weight: 900;
   font-style: normal;
 }
@@ -147,9 +163,10 @@ body {
 /* line 15, ../sass/common/_base.scss */
 .content {
   position: relative;
+  overflow: hidden;
 }
 
-/* line 19, ../sass/common/_base.scss */
+/* line 20, ../sass/common/_base.scss */
 .h-line {
   background-color: rgba(213, 213, 213, 0.24);
   display: inline-block;
@@ -158,10 +175,64 @@ body {
   width: 2px;
 }
 
-/* line 27, ../sass/common/_base.scss */
+/* line 28, ../sass/common/_base.scss */
 .text-3 {
   color: rgba(0, 0, 0, 0.84);
   font: normal 400 20px/1.4 "Roboto", sans-serif;
+}
+
+/* line 33, ../sass/common/_base.scss */
+.content-wrapper {
+  margin: 65px auto 0;
+  max-width: 1224px;
+}
+
+/* line 38, ../sass/common/_base.scss */
+.icon {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+
+/* line 1, ../sass/common/_link.scss */
+.link {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 16px/1.4 "Roboto", sans-serif;
+  text-decoration: none;
+}
+/* line 6, ../sass/common/_link.scss */
+.link--default {
+  color: rgba(0, 0, 0, 0.56);
+}
+/* line 10, ../sass/common/_link.scss */
+.link--primary {
+  color: #03a87c;
+}
+
+/* line 1, ../sass/common/_button.scss */
+.button {
+  background-color: transparent;
+  border-color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.84);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: inline-block;
+  font: normal 400 15px/19px "Roboto", sans-serif;
+  height: 19px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+/* line 9, ../sass/common/_button.scss */
+.button--md {
+  font: normal 400 16px/37px "Roboto", sans-serif;
+  height: 37px;
+  padding: 0 16px;
+}
+/* line 13, ../sass/common/_button.scss */
+.button--primary {
+  background-color: transparent;
+  border-color: #03a87c;
+  color: #03a87c;
 }
 
 /* line 1, ../sass/components/_header.scss */
@@ -173,8 +244,9 @@ body {
   height: auto;
   position: fixed;
   width: 100%;
+  z-index: 500;
 }
-/* line 8, ../sass/components/_header.scss */
+/* line 9, ../sass/components/_header.scss */
 .header-wrapper {
   -webkit-align-items: center;
   align-items: center;
@@ -187,7 +259,7 @@ body {
   max-width: 1224px;
   padding: 0 65px;
 }
-/* line 19, ../sass/components/_header.scss */
+/* line 20, ../sass/components/_header.scss */
 .header__block--base {
   -webkit-align-items: center;
   align-items: center;
@@ -196,16 +268,197 @@ body {
   -webkit-flex: 1 1 auto;
   flex: 1 1 auto;
 }
-/* line 24, ../sass/components/_header.scss */
+/* line 25, ../sass/components/_header.scss */
 .header__block--base .logo {
   height: 22px;
   width: 112px;
 }
-/* line 29, ../sass/components/_header.scss */
+/* line 30, ../sass/components/_header.scss */
 .header__block--base .h-line {
   margin: 0 10px;
 }
-/* line 33, ../sass/components/_header.scss */
+/* line 34, ../sass/components/_header.scss */
 .header__block--base .text-3 {
   margin-top: 7px;
+}
+
+/* line 1, ../sass/components/_user-account.scss */
+.user-account {
+  position: relative;
+}
+
+/* line 5, ../sass/components/_user-account.scss */
+.user-account-buttons {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+}
+/* line 10, ../sass/components/_user-account.scss */
+.user-account-buttons .user-account-button {
+  margin-right: 16px;
+}
+/* line 13, ../sass/components/_user-account.scss */
+.user-account-buttons .user-account-button:last-child {
+  margin-right: 0;
+}
+
+/* line 2, ../sass/components/_article.scss */
+.article__header {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 40px;
+}
+/* line 7, ../sass/components/_article.scss */
+.article__header-title {
+  padding: 0 60px 0 65px;
+}
+/* line 11, ../sass/components/_article.scss */
+.article__header-image {
+  background-clip: padding-box;
+  position: relative;
+}
+/* line 16, ../sass/components/_article.scss */
+.article__header-title, .article__header-image {
+  -webkit-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+/* line 22, ../sass/components/_article.scss */
+.article__content {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 20px;
+  position: relative;
+}
+/* line 28, ../sass/components/_article.scss */
+.article__content .article-p {
+  font: normal 400 21px/1.58 "Open Sans", sans-serif;
+}
+/* line 31, ../sass/components/_article.scss */
+.article__content .article-p + .article-p {
+  margin-top: 30px;
+}
+/* line 36, ../sass/components/_article.scss */
+.article__content .article-p--leading::first-letter {
+  display: block;
+  float: left;
+  font: normal 400 66px/0.83 "Open Sans", sans-serif;
+  padding: 7px 14px 0 0;
+  position: relative;
+}
+/* line 45, ../sass/components/_article.scss */
+.article__content .article-p .top-highlight {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(12, 242, 143, 0.2), rgba(12, 242, 143, 0.2));
+}
+/* line 51, ../sass/components/_article.scss */
+.article__content .top-highlight-label {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 15px/19px "Open Sans", sans-serif;
+  padding-left: 10px;
+  position: absolute;
+  right: -100px;
+}
+/* line 59, ../sass/components/_article.scss */
+.article__content .article-quote {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 25px/1.58 "Open Sans", sans-serif;
+  margin: 50px 0;
+  padding-left: 50px;
+}
+/* line 66, ../sass/components/_article.scss */
+.article__content .section-divider {
+  border: 0;
+  color: rgba(0, 0, 0, 0.56);
+  line-height: 1;
+  margin: 30px 0 40px;
+  text-align: center;
+}
+/* line 73, ../sass/components/_article.scss */
+.article__content .section-divider::before {
+  content: "...";
+  font-family: "Open Sans";
+  font-size: 30px;
+  letter-spacing: .5em;
+}
+
+/* line 83, ../sass/components/_article.scss */
+.article-image {
+  margin: 0;
+}
+/* line 86, ../sass/components/_article.scss */
+.article-image img {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+/* line 92, ../sass/components/_article.scss */
+.article-image figcaption {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+  padding-top: 10px;
+}
+
+/* line 99, ../sass/components/_article.scss */
+.adaptive-container {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 107, ../sass/components/_article.scss */
+.article-title {
+  position: relative;
+}
+/* line 110, ../sass/components/_article.scss */
+.article-title__label {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 600 16px/20px "Roboto", sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/components/_user.scss */
+.user {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  position: relative;
+}
+/* line 6, ../sass/components/_user.scss */
+.user__avatar {
+  border-radius: 50%;
+  -webkit-flex: 0 0 60px;
+  flex: 0 0 60px;
+  overflow: hidden;
+}
+/* line 11, ../sass/components/_user.scss */
+.user__avatar img {
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+/* line 18, ../sass/components/_user.scss */
+.user__info {
+  padding-left: 15px;
+}
+/* line 21, ../sass/components/_user.scss */
+.user__info > .info-line {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 16px/1.4 "Roboto", sans-serif;
+}
+/* line 25, ../sass/components/_user.scss */
+.user__info > .info-line > * {
+  vertical-align: middle;
+}
+/* line 30, ../sass/components/_user.scss */
+.user__info .user__name {
+  color: rgba(0, 0, 0, 0.84);
+  margin-right: 10px;
 }

@@ -1,0 +1,35 @@
+.user {
+    @include align-items(center);
+    @include display-flex();
+    position: relative;
+
+    &__avatar {
+        border-radius: 50%;
+        @include flex(0 0 60px);
+        overflow: hidden;
+        
+        img {
+            display: block;
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+    &__info {
+        padding-left: 15px;
+        
+        > .info-line {
+            color: $text-color-1;
+            @include roboto(16px, 1.4);
+            
+            > * {
+                vertical-align: middle;
+            }
+        }
+
+        .user__name {
+            color: $text-color;
+            margin-right: 10px;
+        }
+    }
+}

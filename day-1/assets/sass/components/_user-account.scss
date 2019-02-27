@@ -1,0 +1,17 @@
+.user-account {
+    position: relative;
+}
+
+.user-account-buttons {
+    @include align-items(center);
+    @include display-flex();
+    position: relative;
+
+    .user-account-button {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

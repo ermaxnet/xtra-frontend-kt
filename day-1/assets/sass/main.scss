@@ -1,13 +1,24 @@
 @import "compass/css3/box-sizing";
 @import "compass/css3/box-shadow";
 @import "compass/css3/flexbox";
+@import "compass/typography/vertical_rhythm";
 
 @import "./common/variables";
 
+$base-font-size: 20px;
+$base-line-height: 28px;
+$rhythm-unit: "px";
+
 @import "./mixins/fonts";
+@import "./mixins/button";
 
 @import "./common/reset";
 @import "./common/fonts";
 @import "./common/base";
+@import "./common/link";
+@import "./common/button";
 
 @import "./components/header";
+@import "./components/user-account";
+@import "./components/article";
+@import "./components/user";

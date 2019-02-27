@@ -1,0 +1,11 @@
+@mixin button-size($font-size, $line-height, $height, $padding-x) {
+    @include roboto($font-size, $line-height);
+    height: $height;
+    padding: 0 $padding-x;
+}
+
+@mixin button-color($color, $bg-color, $border-color) {
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $color;
+}

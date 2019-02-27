@@ -12,3 +12,17 @@ ul {
     @include reset-focus;
     @include box-sizing(border-box);
 }
+
+h1 {
+    color: $text-color;
+    @include roboto(46px, 1.25em);
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: $text-color-1;
+    @include roboto(23px, 28px);
+    letter-spacing: 0;
+    margin-bottom: 30px;
+}

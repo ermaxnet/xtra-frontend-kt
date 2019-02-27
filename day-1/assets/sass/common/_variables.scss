@@ -1,8 +1,15 @@
 $max-width: 1224px;
+$max-article-width: 740px;
 $padding-size-x: 65px;
 
 $white: #fff;
+$green: #03a87c;
+$gray-15: rgba(0, 0, 0, .15);
 $text-color: rgba(0, 0, 0, .84);
+$text-color-1: rgba(0, 0, 0, .56);
+$default-link-color: $text-color-1;
+$primary-link-color: $green;
+$caption-color: $text-color-1;
 
 $header-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .05);
 $header-min-height: 65px;
@@ -10,3 +17,13 @@ $header-min-height: 65px;
 $h-line-color: #D5D5D5;
 $h-line-height: 29px;
 $h-line-width: 2px;
+
+$button-height: 19px;
+$button-line-height: 19px;
+$button-padding-size-x: 10px;
+$button-md-height: 37px;
+$button-md-line-height: 37px;
+$button-md-padding-size-x: 16px;
+
+$article-content-padding-size-x: 20px;
+$article-highlight: linear-gradient(to bottom,rgba(12, 242, 143, .2),rgba(12, 242, 143, .2));

@@ -1,0 +1,13 @@
+.link {
+    color: $text-color;
+    @include roboto(16px, 1.4);
+    text-decoration: none;
+
+    &--default {
+        color: $default-link-color;
+    }
+
+    &--primary {
+        color: $primary-link-color;
+    }
+}

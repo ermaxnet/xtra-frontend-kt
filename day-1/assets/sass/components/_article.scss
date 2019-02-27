@@ -1,0 +1,116 @@
+.article {
+    &__header {
+        @include align-items(center);
+        @include display-flex();
+        margin-bottom: 40px;
+
+        &-title {
+            padding: 0 60px 0 65px;
+        }
+
+        &-image {
+            background-clip: padding-box;
+            position: relative;
+        }
+
+        &-title,
+        &-image {
+            @include flex(0 0 50%);
+        }
+    }
+
+    &__content {
+        margin: 0 auto;
+        max-width: $max-article-width;
+        padding: 0 $article-content-padding-size-x;
+        position: relative;
+
+        .article-p {
+            @include open-sans(21px, 1.58);
+
+            & + .article-p {
+                margin-top: 30px;
+            }
+
+            &--leading {
+                &::first-letter {
+                    display: block;
+                    float: left;
+                    @include open-sans(66px, .83);
+                    padding: 7px 14px 0 0;
+                    position: relative;
+                }
+            }
+
+            .top-highlight {
+                background-color: transparent;
+                background-image: $article-highlight;
+            }
+        }
+
+        .top-highlight-label {
+            color: $text-color-1;
+            @include open-sans(15px, 19px);
+            padding-left: 10px;
+            position: absolute;
+            right: -100px;
+        }
+
+        .article-quote {
+            color: $text-color-1;
+            @include open-sans(25px, 1.58);
+            margin: 50px 0;
+            padding-left: 50px;
+        }
+
+        .section-divider {
+            border: 0;
+            color: $text-color-1;
+            line-height: 1;
+            margin: 30px 0 40px;
+            text-align: center;
+
+            &::before {
+                content: "...";
+                font-family: "Open Sans";
+                font-size: 30px;
+                letter-spacing: .5em;
+            }
+        }
+    }
+}
+
+.article-image {
+    margin: 0;
+
+    img {
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+
+    figcaption {
+        color: $caption-color;
+        @include roboto(16px, 20px);
+        padding-top: 10px;
+    }
+}
+
+.adaptive-container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    width: 100%;
+}
+
+.article-title {
+    position: relative;
+
+    &__label {
+        color: $caption-color;
+        @include roboto-medium(16px, 20px);
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+}
