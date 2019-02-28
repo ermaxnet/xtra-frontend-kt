@@ -87,6 +87,13 @@ h1 {
 }
 
 /* line 23, ../sass/common/_reset.scss */
+h2 {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 600 29px/32px "Roboto", sans-serif;
+  letter-spacing: -1px;
+}
+
+/* line 29, ../sass/common/_reset.scss */
 h3 {
   color: rgba(0, 0, 0, 0.56);
   font: normal 400 23px/28px "Roboto", sans-serif;
@@ -143,6 +150,51 @@ h3 {
   font-weight: 900;
   font-style: normal;
 }
+@-moz-keyframes pulse-shadow--collection {
+  0% {
+    -moz-box-shadow: 0 0;
+    box-shadow: 0 0;
+  }
+  70% {
+    -moz-box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@-webkit-keyframes pulse-shadow--collection {
+  0% {
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+  }
+  70% {
+    -webkit-box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+@keyframes pulse-shadow--collection {
+  0% {
+    -moz-box-shadow: 0 0;
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+  }
+  70% {
+    -moz-box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
 /* line 1, ../sass/common/_base.scss */
 html, body {
   overflow-x: hidden;
@@ -193,20 +245,54 @@ body {
   height: 15px;
   width: 15px;
 }
+/* line 43, ../sass/common/_base.scss */
+.icon--2x {
+  height: 29px;
+  width: 29px;
+}
+
+/* line 49, ../sass/common/_base.scss */
+.image {
+  margin: 0;
+}
+/* line 52, ../sass/common/_base.scss */
+.image img {
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+/* line 58, ../sass/common/_base.scss */
+.image figcaption {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+  padding-top: 10px;
+}
+
+/* line 65, ../sass/common/_base.scss */
+.label {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 600 16px/20px "Roboto", sans-serif;
+  text-transform: uppercase;
+}
 
 /* line 1, ../sass/common/_link.scss */
 .link {
   color: rgba(0, 0, 0, 0.84);
   font: normal 400 16px/1.4 "Roboto", sans-serif;
   text-decoration: none;
+  position: relative;
 }
-/* line 6, ../sass/common/_link.scss */
+/* line 7, ../sass/common/_link.scss */
 .link--default {
   color: rgba(0, 0, 0, 0.56);
 }
-/* line 10, ../sass/common/_link.scss */
+/* line 11, ../sass/common/_link.scss */
 .link--primary {
   color: #03a87c;
+}
+/* line 15, ../sass/common/_link.scss */
+.link--underlined {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.56);
 }
 
 /* line 1, ../sass/common/_button.scss */
@@ -216,19 +302,20 @@ body {
   color: rgba(0, 0, 0, 0.84);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   display: inline-block;
   font: normal 400 15px/19px "Roboto", sans-serif;
   height: 19px;
   padding: 0 10px;
   text-decoration: none;
 }
-/* line 9, ../sass/common/_button.scss */
+/* line 10, ../sass/common/_button.scss */
 .button--md {
   font: normal 400 16px/37px "Roboto", sans-serif;
   height: 37px;
   padding: 0 16px;
 }
-/* line 13, ../sass/common/_button.scss */
+/* line 14, ../sass/common/_button.scss */
 .button--primary {
   background-color: transparent;
   border-color: #03a87c;
@@ -384,25 +471,15 @@ body {
   font-size: 30px;
   letter-spacing: .5em;
 }
-
-/* line 83, ../sass/components/_article.scss */
-.article-image {
-  margin: 0;
-}
-/* line 86, ../sass/components/_article.scss */
-.article-image img {
-  display: block;
-  position: absolute;
-  width: 100%;
-}
-/* line 92, ../sass/components/_article.scss */
-.article-image figcaption {
-  color: rgba(0, 0, 0, 0.56);
-  font: normal 400 16px/20px "Roboto", sans-serif;
-  padding-top: 10px;
+/* line 82, ../sass/components/_article.scss */
+.article__footer {
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 0 20px;
+  position: relative;
 }
 
-/* line 99, ../sass/components/_article.scss */
+/* line 90, ../sass/components/_article.scss */
 .adaptive-container {
   display: inline-block;
   overflow: hidden;
@@ -411,16 +488,160 @@ body {
   width: 100%;
 }
 
-/* line 107, ../sass/components/_article.scss */
+/* line 98, ../sass/components/_article.scss */
 .article-title {
   position: relative;
 }
-/* line 110, ../sass/components/_article.scss */
+/* line 101, ../sass/components/_article.scss */
 .article-title__label {
-  color: rgba(0, 0, 0, 0.56);
-  font: normal 600 16px/20px "Roboto", sans-serif;
   margin-bottom: 15px;
-  text-transform: uppercase;
+}
+
+/* line 106, ../sass/components/_article.scss */
+.article-commercial {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+/* line 111, ../sass/components/_article.scss */
+.article-commercial .commercial-image {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+/* line 116, ../sass/components/_article.scss */
+.article-commercial .commercial-image-wrapper {
+  width: 200px;
+}
+/* line 120, ../sass/components/_article.scss */
+.article-commercial .commercial-image figcaption {
+  text-align: center;
+}
+
+/* line 126, ../sass/components/_article.scss */
+.article-social {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+/* line 133, ../sass/components/_article.scss */
+.article-social .article-claps {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 137, ../sass/components/_article.scss */
+.article-social .article-claps .article-claps-button {
+  -webkit-align-items: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 60px;
+  -moz-transition: border-color 100ms ease 0s, color 100ms ease 0s;
+  -o-transition: border-color 100ms ease 0s, color 100ms ease 0s;
+  -webkit-transition: border-color 100ms ease, color 100ms ease;
+  -webkit-transition-delay: 0s, 0s;
+  transition: border-color 100ms ease 0s, color 100ms ease 0s;
+  width: 60px;
+}
+/* line 148, ../sass/components/_article.scss */
+.article-social .article-claps .article-claps-button:hover {
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -moz-animation-name: pulse-shadow--collection;
+  -webkit-animation-name: pulse-shadow--collection;
+  animation-name: pulse-shadow--collection;
+  border-color: #03a87c;
+  color: #03a87c;
+}
+/* line 156, ../sass/components/_article.scss */
+.article-social .article-claps .article-claps-button img {
+  display: inline-block;
+  height: 33px;
+  width: 33px;
+}
+/* line 163, ../sass/components/_article.scss */
+.article-social .article-claps .article-claps-count {
+  font: normal 400 16px/1.4 "Roboto", sans-serif;
+  margin-left: 15px;
+}
+/* line 169, ../sass/components/_article.scss */
+.article-social .article-links {
+  position: relative;
+}
+/* line 172, ../sass/components/_article.scss */
+.article-social .article-links__list {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 177, ../sass/components/_article.scss */
+.article-social .article-links__link {
+  cursor: pointer;
+  margin-right: 15px;
+}
+/* line 181, ../sass/components/_article.scss */
+.article-social .article-links__link:last-child {
+  margin-right: 0;
+}
+/* line 186, ../sass/components/_article.scss */
+.article-social .article-links .article-more-actions {
+  height: 25px;
+  width: 25px;
+}
+
+/* line 193, ../sass/components/_article.scss */
+.article-written-by {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 50px;
+}
+/* line 199, ../sass/components/_article.scss */
+.article-written-by .user-avatar {
+  border-radius: 50%;
+  height: 152px;
+  overflow: hidden;
+  width: 152px;
+}
+/* line 205, ../sass/components/_article.scss */
+.article-written-by .user-avatar img {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+/* line 212, ../sass/components/_article.scss */
+.article-written-by .written-by {
+  margin-left: 25px;
+}
+/* line 215, ../sass/components/_article.scss */
+.article-written-by .written-by .author-name {
+  margin: 5px 0;
+}
+/* line 219, ../sass/components/_article.scss */
+.article-written-by .written-by .author-category {
+  margin-bottom: 20px;
 }
 
 /* line 1, ../sass/components/_user.scss */
@@ -461,4 +682,194 @@ body {
 .user__info .user__name {
   color: rgba(0, 0, 0, 0.84);
   margin-right: 10px;
+}
+
+/* line 1, ../sass/components/_read-next.scss */
+.read-next-section-wrapper {
+  margin-top: 90px;
+  padding: 0 65px 60px;
+  position: relative;
+}
+/* line 6, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .section-title {
+  color: #03a87c;
+  font: normal 700 16px/20px "Roboto", sans-serif;
+  left: 75px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 25px;
+}
+/* line 15, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section {
+  -webkit-align-content: space-between;
+  align-content: space-between;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 25px 10px 0;
+}
+/* line 23, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  width: 32%;
+}
+/* line 29, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story .next-story__block {
+  padding: 15px 0;
+}
+/* line 32, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story .next-story__block .next-story__title {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 24px/32px "Roboto", sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+/* line 39, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story .next-story__block .next-story__theme {
+  color: rgba(0, 0, 0, 0.56);
+  font: normal 400 19px/24px "Roboto", sans-serif;
+  letter-spacing: 0;
+  margin-bottom: 25px;
+}
+/* line 46, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story .next-story__block .next-story__info {
+  color: rgba(0, 0, 0, 0.84);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+}
+/* line 50, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story .next-story__block .next-story__info > * {
+  vertical-align: middle;
+}
+/* line 56, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story--main {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  margin-bottom: 24px;
+  width: 100%;
+}
+/* line 61, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story--main .next-story__image,
+.read-next-section-wrapper .read-next-section .next-story--main .next-story__block {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 50%;
+}
+/* line 67, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story--main .next-story__block {
+  padding-top: 35px;
+}
+/* line 70, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story--main .next-story__block .next-story__title {
+  font: normal 400 40px/50px "Roboto", sans-serif;
+  letter-spacing: normal;
+  margin-bottom: 10px;
+}
+/* line 76, ../sass/components/_read-next.scss */
+.read-next-section-wrapper .read-next-section .next-story--main .next-story__block .next-story__theme {
+  font: normal 400 21px/28px "Roboto", sans-serif;
+  margin-bottom: 35px;
+}
+
+/* line 1, ../sass/components/_footer.scss */
+.footer {
+  background-color: rgba(0, 0, 0, 0.88);
+}
+/* line 4, ../sass/components/_footer.scss */
+.footer-wrapper {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 50px 20px;
+}
+
+/* line 11, ../sass/components/_footer.scss */
+.footer-contents {
+  position: relative;
+  width: 100%;
+}
+/* line 15, ../sass/components/_footer.scss */
+.footer-contents__list {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 21, ../sass/components/_footer.scss */
+.footer-contents__item {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: 300px;
+}
+/* line 25, ../sass/components/_footer.scss */
+.footer-contents__item .footer-contents__title {
+  color: rgba(255, 255, 255, 0.85);
+  font: normal 600 21px/24px "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
+/* line 31, ../sass/components/_footer.scss */
+.footer-contents__item .footer-contents__text {
+  color: rgba(255, 255, 255, 0.5);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+}
+/* line 35, ../sass/components/_footer.scss */
+.footer-contents__item .footer-contents__text .link {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.5);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+}
+
+/* line 44, ../sass/components/_footer.scss */
+.footer-legal {
+  -webkit-align-items: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-top: 40px;
+  position: relative;
+  width: 100%;
+}
+/* line 54, ../sass/components/_footer.scss */
+.footer-legal .logo {
+  height: 22px;
+  width: 112px;
+}
+/* line 59, ../sass/components/_footer.scss */
+.footer-legal .footer-links {
+  position: relative;
+}
+/* line 62, ../sass/components/_footer.scss */
+.footer-legal .footer-links__list {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 67, ../sass/components/_footer.scss */
+.footer-legal .footer-links__link {
+  -webkit-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 40px;
+}
+/* line 71, ../sass/components/_footer.scss */
+.footer-legal .footer-links__link .link {
+  color: rgba(255, 255, 255, 0.5);
+  font: normal 400 16px/20px "Roboto", sans-serif;
+}
+/* line 76, ../sass/components/_footer.scss */
+.footer-legal .footer-links__link:last-child {
+  margin-right: 0;
 }

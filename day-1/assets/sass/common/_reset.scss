@@ -20,6 +20,12 @@ h1 {
     margin-bottom: 15px;
 }
 
+h2 {
+    color: $text-color;
+    @include roboto-medium(29px, 32px);
+    letter-spacing: -1px;
+}
+
 h3 {
     color: $text-color-1;
     @include roboto(23px, 28px);

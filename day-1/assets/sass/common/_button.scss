@@ -2,6 +2,7 @@
     @include button-color($text-color, transparent, $gray-15);
     border: 1px solid $gray-15;
     border-radius: 4px;
+    cursor: pointer;
     display: inline-block;
     @include button-size(15px, $button-line-height, $button-height, $button-padding-size-x);
     text-decoration: none;

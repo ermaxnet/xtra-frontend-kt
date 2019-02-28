@@ -1,0 +1,84 @@
+.read-next-section-wrapper {
+    margin-top: 90px;
+    padding: 0 $padding-size-x 60px;
+    position: relative;
+
+    .section-title {
+        color: $green;
+        @include roboto-bold(16px, 20px);
+        left: #{$padding-size-x + 10};
+        position: absolute;
+        text-transform: uppercase;
+        top: 25px;
+    }
+
+    .read-next-section {
+        @include align-content(space-between);
+        border-top: 1px solid $gray-15;
+        @include display-flex();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        padding: 25px 10px 0;
+
+        .next-story {
+            @include display-flex();
+            @include flex(0 0 auto);
+            @include flex-direction(column);
+            width: 32%;
+
+            .next-story__block {
+                padding: 15px 0;
+
+                .next-story__title {
+                    color: $text-color;
+                    @include roboto(24px, 32px);
+                    letter-spacing: 0;
+                    margin-bottom: 5px;
+                }
+
+                .next-story__theme {
+                    color: $text-color-1;
+                    @include roboto(19px, 24px);
+                    letter-spacing: 0;
+                    margin-bottom: 25px;
+                }
+
+                .next-story__info {
+                    color: $text-color;
+                    @include roboto(16px, 20px);
+
+                    > * {
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            &--main {
+                @include flex-direction(row-reverse);
+                margin-bottom: 24px;
+                width: 100%;
+
+                .next-story__image,
+                .next-story__block {
+                    @include flex(0 0 auto);
+                    width: 50%;
+                }
+
+                .next-story__block {
+                    padding-top: 35px;
+
+                    .next-story__title {
+                        @include roboto(40px, 50px);
+                        letter-spacing: normal;
+                        margin-bottom: 10px;
+                    }
+
+                    .next-story__theme {
+                        @include roboto(21px, 28px);
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
