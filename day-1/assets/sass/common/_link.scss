@@ -10,6 +10,11 @@
 
     &--primary {
         color: $primary-link-color;
+        @include transition(color 100ms ease);
+
+        &:hover {
+            color: $green-1;
+        }
     }
 
     &--underlined {

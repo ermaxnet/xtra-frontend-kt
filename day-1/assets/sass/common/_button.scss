@@ -13,5 +13,11 @@
 
     &--primary {
         @include button-color($green, transparent, $green);
+        @include transition(color 100ms ease, border-color 100ms ease);
+
+        &:hover {
+            border-color: $green-1;
+            color: $green-1;
+        }
     }
 }

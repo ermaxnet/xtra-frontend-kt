@@ -289,8 +289,16 @@ body {
 /* line 11, ../sass/common/_link.scss */
 .link--primary {
   color: #03a87c;
+  -moz-transition: color 100ms ease;
+  -o-transition: color 100ms ease;
+  -webkit-transition: color 100ms ease;
+  transition: color 100ms ease;
 }
 /* line 15, ../sass/common/_link.scss */
+.link--primary:hover {
+  color: #018f69;
+}
+/* line 20, ../sass/common/_link.scss */
 .link--underlined {
   border-bottom: 1px solid rgba(0, 0, 0, 0.56);
 }
@@ -320,6 +328,15 @@ body {
   background-color: transparent;
   border-color: #03a87c;
   color: #03a87c;
+  -moz-transition: color 100ms ease, border-color 100ms ease;
+  -o-transition: color 100ms ease, border-color 100ms ease;
+  -webkit-transition: color 100ms ease, border-color 100ms ease;
+  transition: color 100ms ease, border-color 100ms ease;
+}
+/* line 18, ../sass/common/_button.scss */
+.button--primary:hover {
+  border-color: #018f69;
+  color: #018f69;
 }
 
 /* line 1, ../sass/components/_header.scss */
