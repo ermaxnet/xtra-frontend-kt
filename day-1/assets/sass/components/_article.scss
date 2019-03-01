@@ -221,3 +221,51 @@
         }
     }
 }
+
+.acticle-content-wrapper {
+    position: relative;
+}
+
+.acticle-sidebar {
+    margin-left: 65px;
+    margin-top: 30px;
+    position: absolute;
+    top: 0;
+
+    &.fixed {
+        position: fixed;
+        top: 100px;
+    }
+
+    &__links {
+        @include display-flex();
+        @include flex-direction(column);
+    }
+
+    &__link {
+        height: 29px;
+        margin-top: 15px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .claps {
+        @include align-items(center);
+        @include display-flex();
+        padding-left: 2px;
+
+        img {
+            @include flex(0 0 auto);
+            height: 25px;
+            width: 25px;
+        }
+
+        span {
+            color: $text-color-1;
+            @include roboto(16px, 20px);
+            margin-left: 5px;
+        }
+    }
+}
